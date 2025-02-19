@@ -67,3 +67,5 @@ Maven使用pom.xml文件来定义项目依赖。
   </modules>
   ~~~
   
+### 6.常用链接
+[依赖信息查询](https://mvnrepository.com/)

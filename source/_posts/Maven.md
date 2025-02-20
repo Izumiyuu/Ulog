@@ -16,7 +16,7 @@ Maven使用pom.xml文件来定义项目依赖。
 - ArtifactId：项目或依赖名称。同组中有唯一性。
 - Version：版本号
 - Packaging：打包类型  
-```java
+```xml
 //一个依赖示例
 <dependency>
   <groupId>org.springframework.boot</groupId>
@@ -25,7 +25,7 @@ Maven使用pom.xml文件来定义项目依赖。
 </dependency>
 ```
 依赖管理
-~~~java
+~~~xml
 //properties设置版本号
 //dependencyManagement管理依赖
   <properties>
@@ -61,7 +61,7 @@ Maven使用pom.xml文件来定义项目依赖。
 聚合是指在**一个父项目中管理多个子项目**，使得构建和管理多个模块变得更加方便。在**聚合项目**的根目录中运行 Maven 命令，可以同时构建和管理所有子项目。  
 聚合项目（Aggregator Project）**本身通常不包含代码**，仅用于组织和管理子项目
 聚合项目的 POM 文件通过 `<modules>`  元素定义了包含的子项目。通过聚合，可以一次性构建和管理所有子项目。简化了构建和发布过程。
-  ~~~
+  ~~~xml
   <modules>
     <module></module>
   </modules>
